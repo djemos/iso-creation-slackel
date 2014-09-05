@@ -1,0 +1,1 @@
+rsync -avP -e ssh slackel-openbox-current-2.0.iso  djemos,slackel@frs.sourceforge.net:/home/frs/project/slackel/openbox/testing/
