@@ -175,6 +175,8 @@ makedepend
 mate-colors-icon-theme
 mate-dialogs
 mate-icon-theme
+mate-media
+mate-notification-daemon
 menu-cache
 mesa
 midori
@@ -216,7 +218,7 @@ rendercheck
 renderproto
 resourceproto
 rgb
-sakura
+lxterminal
 salix-artwork
 salixtools-gtk
 samba
