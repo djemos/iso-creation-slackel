@@ -26,6 +26,7 @@ dejavu-fonts-ttf
 desktop-file-utils
 dmxproto
 dri2proto
+dri3proto
 enchant
 encodings
 esound
@@ -86,6 +87,7 @@ gtk-engines
 gtkmm
 harfbuzz
 hicolor-icon-theme
+hunspell
 iceauth
 ico
 icon-naming-utils
@@ -106,6 +108,7 @@ libSM
 libX11
 libXScrnSaver
 libXau
+libXaw
 libXcomposite
 libXcursor
 libXdamage
@@ -131,12 +134,14 @@ libXvMC
 libXxf86dga
 libXxf86misc
 libXxf86vm
+libaio
 libart_lgpl
 libatasmart
 libcanberra
 libdmx
 libdrm
 liberation-fonts-ttf
+libevdev
 libexif
 libfontenc
 libglade
@@ -167,11 +172,13 @@ libx86
 libxcb
 libxkbfile
 libxklavier
+libxshmfence
 libxslt
 listres
 luit
 lxappearance
 lxmenu-data
+lxterminal
 makedepend
 mate-colors-icon-theme
 mate-dialogs
@@ -202,6 +209,7 @@ pixman
 pnm2ppa
 polkit
 poppler
+presentproto
 printproto
 pyalsaaudio
 pycairo
@@ -219,7 +227,6 @@ rendercheck
 renderproto
 resourceproto
 rgb
-lxterminal
 salix-artwork
 salixtools-gtk
 samba
@@ -364,17 +371,10 @@ xset
 xsetroot
 xsm
 xstdcmap
+xterm
 xtrans
 xvidtune
 xvinfo
 xwd
 xwininfo
 xwud
-libXaw
-libaio
-hunspell
-xterm
-dri3proto
-libevdev
-libxshmfence
-presentproto

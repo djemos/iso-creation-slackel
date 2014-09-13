@@ -8,6 +8,7 @@ bluez-firmware
 bluez-hcidump
 brasero
 claws-mail
+dconf
 depfinder
 djvulibre
 exaile
@@ -41,6 +42,7 @@ ipw2200-fw
 iso-codes
 iw
 libass
+libbluray
 libcaca
 libcdaudio
 libcuefile
@@ -53,6 +55,7 @@ libevent
 libgphoto2
 libgpod
 libhangul
+libical
 libiodbc
 libmms
 libmtp
@@ -69,6 +72,7 @@ madplay
 mate-document-viewer
 mate-file-archiver
 mpg123
+mtpaint
 musepack-tools
 mutagen
 ndisgtk
@@ -83,6 +87,7 @@ parcellite
 pidgin
 pil
 poppler-data
+pygobject3
 pyxdg
 rhino
 sakis3g
@@ -113,8 +118,3 @@ xcb-util-keysyms
 xdg-user-dirs
 xvidcore
 zd1211-firmware
-libical
-pygobject3
-dconf
-libbluray
-mtpaint
