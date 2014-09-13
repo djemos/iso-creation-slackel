@@ -21,7 +21,6 @@ geany
 gegl
 gftp
 ghostscript-fonts-std
-gimp
 gnumeric
 gobject-introspection
 goffice
@@ -34,10 +33,6 @@ gucharmap
 gutenprint
 gvfs
 hplip
-ibus
-ibus-hangul
-ibus-m17n
-ibus-pinyin
 icedtea-web
 ilmbase
 imagemagick
@@ -70,7 +65,6 @@ libwmf
 lilosetup
 loudmouth
 lxrandr
-m17n-lib
 madplay
 mate-document-viewer
 mate-file-archiver
@@ -123,7 +117,4 @@ libical
 pygobject3
 dconf
 libbluray
-dri3proto
-libevdev
-libxshmfence
-presentproto
+mtpaint
