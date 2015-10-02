@@ -17,7 +17,7 @@ SOURCE=http://www.slackel.gr/repo/x86_64/slackware-current/extra/:OFFICIAL
 #SOURCE=http://salix.enialis.net/x86_64/slackware-14.1/extra/:OFFICIAL
 
 # The Salix repository
-SOURCE=http://salix.enialis.net/x86_64/14.1/:PREFERRED
+SOURCE=http://download.salixos.org/x86_64/14.1/:PREFERRED
 
 # The Slackel current repository
 SOURCE=http://www.slackel.gr/repo/x86_64/current/:CUSTOM
