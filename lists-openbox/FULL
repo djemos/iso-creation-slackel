@@ -33,7 +33,6 @@ gucharmap
 gutenprint
 gvfs
 hplip
-icedtea-web
 ilmbase
 imagemagick
 ipw2100-fw
@@ -86,7 +85,6 @@ pil
 poppler-data
 pygobject3
 pyxdg
-rhino
 sakis3g
 salix-codecs-installer
 salix-update-notifier
