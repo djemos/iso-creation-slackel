@@ -72,15 +72,15 @@ if [ -x $T_PX/sbin/liloconfig ] && [ -x $T_PX/sbin/grubconfig ]; then
  dialog --title "Boot Loader" \
   --menu "Please choose the Boot Loader that you would like to use" \
   0 0 0 \
-  "Lilo" "Install Lilo" \
   "Grub" "Install Grub" \
+  "Lilo" "Install Lilo" \
   "EXIT" "(Do not install boot loader)" \
   2> $TMP/reply
  OPTION="`cat $TMP/reply`"
- if [ "$OPTION" = "Lilo" ]; then
-  BOOT_LOADER="Lilo"
- elif [ "$OPTION" = "Grub" ]; then
+ if [ "$OPTION" = "Grub" ]; then
   BOOT_LOADER="Grub"
+ elif [ "$OPTION" = "Lilo" ]; then
+  BOOT_LOADER="Lilo"
  else
   BOOT_LOADER="None"
  fi
