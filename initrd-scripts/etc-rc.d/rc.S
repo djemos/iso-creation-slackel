@@ -2,10 +2,19 @@
 # rc.S:  Basic system initialization.
 
 # remove /etc/mtab* so mount creates the /etc/mtab file
-/bin/rm -f /etc/mtab* /etc/nologin 1> /dev/null 2> /dev/null
+#/bin/rm -f /etc/mtab* /etc/nologin 1> /dev/null 2> /dev/null
+# Any /etc/mtab that exists here is old, so we start with a new one:
+/bin/rm -f /etc/mtab{,~,.tmp} /etc/nologin && /bin/touch /etc/mtab
 
 # Mounts /proc:
-/bin/mount -av -t nonfs 1> /dev/null 2> /dev/null
+/sbin/mount -v proc /proc -t proc 1> /dev/null
+
+# Add (fake) entry for / to /etc/mtab:
+/sbin/mount -f -w /dev/initramfs / -t tmpfs 1> /dev/null
+
+# Mount sysfs next:
+/sbin/mount -v sysfs /sys -t sysfs 1> /dev/null
+
 
 /sbin/swapon -a 2> /dev/null
 

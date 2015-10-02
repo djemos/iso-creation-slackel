@@ -111,7 +111,6 @@ libcddb
 libcdio
 libcgroup
 libcroco
-libelf
 libffi
 libgcrypt
 libgpg-error
@@ -196,7 +195,7 @@ popt
 portmap
 ppp
 procmail
-procps
+procps-ng
 pth
 python
 rcs
@@ -258,3 +257,5 @@ xfsprogs
 xz
 zlib
 zoo
+libsigsegv
+libevent
