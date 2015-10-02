@@ -28,7 +28,7 @@ if [ ! -f VERSION ]; then
 	echo "No VERSION file."
 	exit 1
 else
-	#ver=`cat VERSION`
+   #ver=`cat VERSION`
 	ver='current'
 fi
 
