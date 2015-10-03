@@ -26,6 +26,7 @@ gobject-introspection
 goffice
 gst-plugins-bad
 gst-plugins-good
+gst-plugins-good0
 gst-python
 gtkman
 gtkspell
