@@ -45,7 +45,7 @@ export COLOR=on
 dialog --title "WELCOME TO THE SLACKEL INSTALLATION" \
 --yes-label "Use US keymap" \
 --no-label "Select another keymap" \
---yesno "Welcome to the installation of Slackel, The Bonsai OS!\n\nBefore you proceed \
+--yesno "Welcome to the installation of Slackel.\n\nBefore you proceed \
 with the rest of the installation, you might want to \
 select your keyboard map (keymap). The default keyboard map is the US keyboard map." 0 0
 [ $? -eq 1 ] && SeTkeymap
