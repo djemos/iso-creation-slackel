@@ -5,7 +5,7 @@
 #
 # You really shouldn't build an initrd yourself if you're
 # making a custom iso. Use the initrd files found in a
-# Salix iso instead.
+# Slackel iso instead.
 #
 # This script assumes that in a 32bit system, you're running the smp
 # kernel and that you at least have the non-smp kernel-modules package
