@@ -1,6 +1,6 @@
 
 
-Welcome to 09Slackel64 __EDITION__07 version 6.0!
+Welcome to 09Slackel64 __EDITION__07 version 6.0.4!
 
 If you need to pass extra parameters to the kernel, enter them at the prompt
 below after the name of the kernel to boot (huge.s).
