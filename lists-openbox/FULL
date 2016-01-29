@@ -5,7 +5,6 @@ babl
 bc
 bluez
 bluez-firmware
-bluez-hcidump
 brasero
 claws-mail
 depfinder
@@ -14,7 +13,6 @@ exaile
 exiv2
 faac
 faad2
-fftw
 flash-plugin
 galculator
 geany
@@ -24,7 +22,6 @@ ghostscript-fonts-std
 gnumeric
 gobject-introspection
 goffice
-gst-plugins-bad
 gst-plugins-good
 gst-plugins-good0
 gst-python
@@ -74,15 +71,12 @@ musepack-tools
 mutagen
 ndisgtk
 ndiswrapper
-obex-data-server
-obexfs
 obexftp
 openexr
-openjre
 openobex
 parcellite
 pidgin
-pil
+python-pillow
 poppler-data
 pygobject3
 pyxdg
@@ -96,7 +90,6 @@ speex
 sshfs-fuse
 taglib
 taglib-extras
-tcl
 transmission
 urlgrabber
 urwid
@@ -126,4 +119,4 @@ glib
 gtk+ 
 json-glib 
 openjpeg1 
-
+aiksaurus

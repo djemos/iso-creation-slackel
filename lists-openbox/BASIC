@@ -1,8 +1,9 @@
-ConsoleKit
+ConsoleKit2
 GConf
 aalib
 alsa-lib
 alsa-oss
+alsa-plugins
 alsa-utils
 appres
 at-spi2-atk
@@ -20,6 +21,7 @@ clearlooks-phenix
 compositeproto
 conky
 cups
+cups-filters
 damageproto
 dejavu-fonts-ttf
 desktop-file-utils
@@ -70,7 +72,6 @@ glproto
 glu
 gmime
 gmrun
-adwaita-icon-theme
 gnome-themes-standard
 gnsu
 gsettings-desktop-schemas
@@ -286,7 +287,6 @@ xdriinfo
 xev
 xextproto
 xf86-input-acecad
-xf86-input-aiptek
 xf86-input-evdev
 xf86-input-joystick
 xf86-input-keyboard
@@ -309,7 +309,6 @@ xf86-video-i740
 xf86-video-intel
 xf86-video-mach64
 xf86-video-mga
-xf86-video-modesetting
 xf86-video-neomagic
 xf86-video-nouveau
 xf86-video-nv
@@ -387,3 +386,13 @@ json-c
 dconf
 xcb-util-keysyms
 libplist
+cgmanager
+libnih
+pulseaudio
+pavucontrol
+gtkmm3
+fftw
+libasyncns
+sbc
+speexdsp
+qpdf

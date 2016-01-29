@@ -70,6 +70,8 @@ getty-ps
 git
 glib2
 glibc
+glibc-i18n
+glibc-zoneinfo
 gmm
 gmp
 gnupg
@@ -81,8 +83,6 @@ gpm
 gptfdisk
 grep
 groff
-grub
-grub-scripts
 guile
 gzip
 hdparm
@@ -192,7 +192,6 @@ pkgtools
 pm-utils
 pmake
 popt
-portmap
 ppp
 procmail
 procps-ng
@@ -240,7 +239,7 @@ texinfo
 time
 traceroute
 tree
-udev
+eudev
 unarj
 unrar
 usbutils
@@ -259,3 +258,9 @@ zlib
 zoo
 libsigsegv
 libevent
+libgudev
+libtirpc
+rpcbind
+libssh2
+grub
+grub-scripts
