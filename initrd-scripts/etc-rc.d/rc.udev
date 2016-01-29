@@ -7,7 +7,7 @@ PATH="/sbin:/bin"
 
 check_mounted() {
   grep -E -q "^[^[:space:]]+ $1 $2" /proc/mounts
-  return $?	
+  return $?
 }
 
 mount_devpts() {
@@ -31,6 +31,7 @@ case "$1" in
           echo "Sorry, but you need tmpfs support in the kernel to use udev."
           echo
           echo "FATAL:  Refusing to run /etc/rc.d/rc.udev."
+          sleep 10
           exit 1
         fi
 
@@ -41,6 +42,7 @@ case "$1" in
             echo "Your kernel version is only $(uname -r)."
             echo
             echo "FATAL:  Refusing to run /etc/rc.d/rc.udev."
+            sleep 10
             exit 1
           fi
         fi
@@ -53,6 +55,7 @@ case "$1" in
           echo "No udevd daemon found."
           echo "Turning off udev:  chmod 644 /etc/rc.d/rc.udev"
           echo "FATAL:  Refusing to run /etc/rc.d/rc.udev."
+          sleep 10
           exit 1
         fi
 
