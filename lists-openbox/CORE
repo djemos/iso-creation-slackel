@@ -49,6 +49,7 @@ eject
 enscript
 etc
 ethtool
+eudev
 expat
 fakeroot
 file
@@ -83,6 +84,8 @@ gpm
 gptfdisk
 grep
 groff
+grub
+grub-scripts
 guile
 gzip
 hdparm
@@ -111,9 +114,11 @@ libcddb
 libcdio
 libcgroup
 libcroco
+libevent
 libffi
 libgcrypt
 libgpg-error
+libgudev
 libidn
 libieee1284
 libksba
@@ -130,8 +135,11 @@ libpcap
 libpng
 libpthread-stubs
 libraw1394
+libsigsegv
+libssh2
 libtasn1
 libtermcap
+libtirpc
 libtool
 libunistring
 libusb
@@ -143,6 +151,7 @@ lilo
 lm_sensors
 lndir
 logrotate
+lsb-release
 lsof
 lsscsi
 lvm2
@@ -180,6 +189,7 @@ openssl
 oprofile
 os-prober
 p11-kit
+p7zip
 parted
 patch
 pciutils
@@ -201,6 +211,7 @@ rcs
 readline
 reiserfsprogs
 rp-pppoe
+rpcbind
 rsync
 rzip
 salix-man
@@ -239,7 +250,6 @@ texinfo
 time
 traceroute
 tree
-eudev
 unarj
 unrar
 usbutils
@@ -256,11 +266,3 @@ xfsprogs
 xz
 zlib
 zoo
-libsigsegv
-libevent
-libgudev
-libtirpc
-rpcbind
-libssh2
-grub
-grub-scripts

@@ -84,7 +84,7 @@ gstreamer0
 gtk+2
 gtk+3
 gtk-engines
-gtkmm
+gtkmm2
 hicolor-icon-theme
 hunspell
 harfbuzz
