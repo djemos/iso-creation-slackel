@@ -16,7 +16,7 @@
 /sbin/mount -v sysfs /sys -t sysfs 1> /dev/null
 
 
-/sbin/swapon -a 2> /dev/null
+/sbin/swapon -a 1> /dev/null
 
 if [ -x /sbin/ldconfig ]; then
   /sbin/ldconfig 1> /dev/null 2> /dev/null
