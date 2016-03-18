@@ -52,9 +52,9 @@ touch /.today
 #fi
 
 # Try to mount sysfs:
-if cat /proc/filesystems | grep -w sysfs 1> /dev/null 2> /dev/null ; then
-  mount -t sysfs sysfs /sys 2> /dev/null
-fi
+#if cat /proc/filesystems | grep -w sysfs 1> /dev/null 2> /dev/null ; then
+#mount -t sysfs sysfs /sys 2> /dev/null
+#fi
 
 # System logger (mostly to eat annoying messages):
 /sbin/syslogd 2> /dev/null
