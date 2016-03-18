@@ -19,7 +19,7 @@
 /sbin/swapon -a 1> /dev/null
 
 if [ -x /sbin/ldconfig ]; then
-  /sbin/ldconfig 1> /dev/null 2> /dev/null
+  /sbin/ldconfig 1> /dev/null
 fi
 
 # Here's the situation.  Because of the practice of keeping the local
