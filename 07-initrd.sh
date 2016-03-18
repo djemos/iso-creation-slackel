@@ -82,7 +82,7 @@ fi
 
 #$VER=14.1
 
-REPO=http://slackware.org.uk
+REPO=http://slackware.uk
 SLACKREPO=$REPO/slackware/slackware${LIBDIRSUFFIX}-$VERSLACKWARE
 SLACK2REPO=$SLACKREPO/slackware${LIBDIRSUFFIX}
 SALIXREPO=$REPO/salix/$arch/$VER/
