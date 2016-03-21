@@ -316,7 +316,8 @@ fi
 
 ROOT_DEVICE="`cat $TMP/return`"
 rm $TMP/tempscript
-if [ "$ROOT_DEVICE" = "---" ]; then
+#if [ "$ROOT_DEVICE" = "---" ]; then
+if ! echo $ROOT_DEVICE|grep dev/; then
    exit 255
 fi
 
