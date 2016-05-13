@@ -24,7 +24,7 @@ else
 	arch=`cat ARCH`
 fi
 
-rm -rf isolinux/$arch
+#rm -rf isolinux/$arch
 mkdir -p isolinux/$arch
 
 # copy the isolinux.bin from the system (it's exactly the same for both

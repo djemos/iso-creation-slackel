@@ -91,6 +91,7 @@ gzip
 hdparm
 htop
 icmpinfo
+icu4c
 indent
 inetd
 infozip
@@ -133,6 +134,7 @@ libnl3
 libogg
 libpcap
 libpng
+libproxy
 libpthread-stubs
 libraw1394
 libsigsegv

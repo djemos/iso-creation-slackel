@@ -20,6 +20,7 @@ SOURCE=http://www.slackel.gr/repo/x86_64/slackware-current/extra/:OFFICIAL
 SOURCE=http://download.salixos.org/x86_64/14.1/:PREFERRED
 
 # The Slackel current repository
+SOURCE=http://sourceforge.net/projects/slackel/files/repo/x86_64/current/:CUSTOM
 SOURCE=http://www.slackel.gr/repo/x86_64/current/:CUSTOM
 
 # Sources for the testing and pasture areas - if you use them.

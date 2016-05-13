@@ -18,9 +18,10 @@ SOURCE=http://www.slackel.gr/repo/i486/slackware-current/extra/:OFFICIAL
 #SOURCE=http://salix.enialis.net/i486/slackware-14.1/extra/:OFFICIAL
 
 # The Salix repository
-SOURCE=http://download.salixos.org/i486/14.1/:PREFERRED
+SOURCE=http://salix.enialis.net/i486/14.1/:PREFERRED
 
 # The Slackel current repository
+SOURCE=http://sourceforge.net/projects/slackel/files/repo/i486/current/:CUSTOM
 SOURCE=http://www.slackel.gr/repo/i486/current/:CUSTOM
 
 # Sources for the testing and pasture areas - if you use them.

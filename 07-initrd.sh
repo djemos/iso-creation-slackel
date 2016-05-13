@@ -5,7 +5,7 @@
 #
 # You really shouldn't build an initrd yourself if you're
 # making a custom iso. Use the initrd files found in a
-# Slackel iso instead.
+# Salix iso instead.
 #
 # This script assumes that in a 32bit system, you're running the smp
 # kernel and that you at least have the non-smp kernel-modules package
@@ -49,7 +49,7 @@ repository and converts it to a slackel initrd.img file.\n\
 \n\
 You really shouldn't build an initrd yourself if you're\n\
 making a custom iso. Use the initrd files found in a\n\
-Salix iso instead.\n\
+Slackel iso instead.\n\
 \n\
 When you get the initrd files from a slackel iso, put them in an\n\
 initrd/i486 or initrd/x86_64 directory, according to your\n\
@@ -82,6 +82,7 @@ fi
 
 #$VER=14.1
 
+#REPO=http://slackware.org.uk
 REPO=http://slackware.uk
 SLACKREPO=$REPO/slackware/slackware${LIBDIRSUFFIX}-$VERSLACKWARE
 SLACK2REPO=$SLACKREPO/slackware${LIBDIRSUFFIX}
@@ -130,12 +131,12 @@ spkg -qq --root=/boot/initrd-tree/ -i spkg-*.tgz
 rm spkg-*.tgz
 
 echo "Downloading xz..."
-rm -f xz-*.tgz
-LOC=`grep "\/xz-.*-.*-.*\.tgz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+rm -f xz-*.txz
+LOC=`grep "\/xz-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
 wget -q $SLACK2REPO/$LOC
 echo "Installing xz..."
-spkg -qq --root=/boot/initrd-tree/ -i xz-*.tgz
-rm xz-*.tgz
+spkg -qq --root=/boot/initrd-tree/ -i xz-*.txz
+rm xz-*.txz
 
 install_nfsutils() {
 echo "Downloading nfsutils..."
