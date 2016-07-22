@@ -70,9 +70,9 @@ gettext-tools
 getty-ps
 git
 glib2
+glibc-zoneinfo
 glibc
 glibc-i18n
-glibc-zoneinfo
 gmm
 gmp
 gnupg
@@ -212,6 +212,7 @@ python
 rcs
 readline
 reiserfsprogs
+rfkill
 rp-pppoe
 rpcbind
 rsync

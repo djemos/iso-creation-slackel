@@ -13,19 +13,19 @@ EXCLUDE=^aaa_elflibs,^aaa_base,^devs,^glibc-.*,^kernel-.*,^udev,^rootuser-settin
 # information.
 SOURCE=http://www.slackel.gr/repo/x86_64/slackware-current/:OFFICIAL
 SOURCE=http://www.slackel.gr/repo/x86_64/slackware-current/extra/:OFFICIAL
-#SOURCE=http://salix.enialis.net/x86_64/slackware-14.1/:OFFICIAL
-#SOURCE=http://salix.enialis.net/x86_64/slackware-14.1/extra/:OFFICIAL
+#SOURCE=http://salix.enialis.net/x86_64/slackware-14.2/:OFFICIAL
+#SOURCE=http://salix.enialis.net/x86_64/slackware-14.2/extra/:OFFICIAL
 
 # The Salix repository
-SOURCE=http://download.salixos.org/x86_64/14.1/:PREFERRED
+SOURCE=http://download.salixos.org/x86_64/14.2/:PREFERRED
 
 # The Slackel current repository
 SOURCE=http://sourceforge.net/projects/slackel/files/repo/x86_64/current/:CUSTOM
 SOURCE=http://www.slackel.gr/repo/x86_64/current/:CUSTOM
 
 # Sources for the testing and pasture areas - if you use them.
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware64-14.1/testing/
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware64-14.1/pasture/
+# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware64-14.2/testing/
+# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware64-14.2/pasture/
 
 # Packages on a CD/DVD.
 # SOURCE=file:///mnt/cdrom/:OFFICIAL

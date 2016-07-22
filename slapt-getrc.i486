@@ -14,19 +14,19 @@ EXCLUDE=^aaa_elflibs,^aaa_base,^devs,^glibc-.*,^kernel-.*,^udev,^rootuser-settin
 
 SOURCE=http://www.slackel.gr/repo/i486/slackware-current/:OFFICIAL
 SOURCE=http://www.slackel.gr/repo/i486/slackware-current/extra/:OFFICIAL
-#SOURCE=http://salix.enialis.net/i486/slackware-14.1/:OFFICIAL
-#SOURCE=http://salix.enialis.net/i486/slackware-14.1/extra/:OFFICIAL
+#SOURCE=http://salix.enialis.net/i486/slackware-14.2/:OFFICIAL
+#SOURCE=http://salix.enialis.net/i486/slackware-14.2/extra/:OFFICIAL
 
 # The Salix repository
-SOURCE=http://salix.enialis.net/i486/14.1/:PREFERRED
+SOURCE=http://salix.enialis.net/i486/14.2/:PREFERRED
 
 # The Slackel current repository
-SOURCE=http://sourceforge.net/projects/slackel/files/repo/i486/current/:CUSTOM
 SOURCE=http://www.slackel.gr/repo/i486/current/:CUSTOM
+SOURCE=http://sourceforge.net/projects/slackel/files/repo/i486/current/:CUSTOM
 
 # Sources for the testing and pasture areas - if you use them.
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-14.1/testing/
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-14.1/pasture/
+# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-14.2/testing/
+# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-14.2/pasture/
 
 # Packages on a CD/DVD.
 # SOURCE=file:///mnt/cdrom/:OFFICIAL
