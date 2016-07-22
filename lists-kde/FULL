@@ -34,7 +34,6 @@ icedtea-web
 ipw2100-fw
 ipw2200-fw
 iso-codes
-iw
 k3b
 kaudiocreator
 kcalc
@@ -120,12 +119,8 @@ soundtouch
 superkaramba
 sweeper
 urlgrabber
-urwid
 v4l-utils
 wavpack
-wicd
-wireless-tools
-wpa_supplicant
 xvidcore
 zd1211-firmware
 filezilla
@@ -137,4 +132,4 @@ a52dec
 libvdpau
 mpg123
 smtube
-
+zenity
