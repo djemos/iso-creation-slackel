@@ -106,7 +106,7 @@ slapt-get --clean
 		FULLPKG=""
 	fi
 	SETTINGSPKG=`cat lists/SETTINGS`
-	for i in $KERNELPKG $COREPKG $BASICPKG $FULLPKG $SETTINGSPKG; do 
+	for i in $AAAPKG $KERNELPKG $COREPKG $BASICPKG $FULLPKG $SETTINGSPKG; do 
 		slapt-get -d --no-dep --reinstall -c slapt-getrc.$arch -i $i
 	done
 } 2>&1 | tee download-$arch.log
