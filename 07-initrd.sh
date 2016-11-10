@@ -5,7 +5,7 @@
 #
 # You really shouldn't build an initrd yourself if you're
 # making a custom iso. Use the initrd files found in a
-# Salix iso instead.
+# Slackel iso instead.
 #
 # This script assumes that in a 32bit system, you're running the smp
 # kernel and that you at least have the non-smp kernel-modules package
@@ -86,7 +86,7 @@ fi
 REPO=http://slackware.uk
 SLACKREPO=$REPO/slackware/slackware${LIBDIRSUFFIX}-$VERSLACKWARE
 SLACK2REPO=$SLACKREPO/slackware${LIBDIRSUFFIX}
-SALIXREPO=$REPO/salix/$arch/$VER/
+SlackelREPO=$REPO/Slackel/$arch/$VER/
 
 mkdir -p initrd/$arch
 rm -rf initrd/$arch/*initrd*.img
@@ -116,16 +116,16 @@ rm /boot/initrd-tree/usr/lib/setup/*
 cp $SCRIPTSDIR/usr-lib-setup/* /boot/initrd-tree/usr/lib/setup/
 
 # download and install required packages
-rm -f slack.md5 salix.md5
+rm -f slack.md5 Slackel.md5
 echo "Downloading slack CHECKSUMS.md5 file"
 wget -q $SLACK2REPO/CHECKSUMS.md5 -O slack.md5
 echo "Downloading slackel CHECKSUMS.md5 file"
-wget -q $SALIXREPO/CHECKSUMS.md5 -O salix.md5
+wget -q $SlackelREPO/CHECKSUMS.md5 -O Slackel.md5
 
 echo "Downloading spkg..."
 rm -f spkg-*.txz
-LOC=`grep "\/spkg-.*-.*-.*\.tgz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SALIXREPO/$LOC
+LOC=`grep "\/spkg-.*-.*-.*\.tgz$" Slackel.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SlackelREPO/$LOC
 echo "Installing spkg..."
 spkg -qq --root=/boot/initrd-tree/ -i spkg-*.tgz
 rm spkg-*.tgz
@@ -194,8 +194,8 @@ install_btrfs_progs
 install_httpfs2() {
 echo "Downloading httpfs2..."
 rm -f httpfs2-*.txz
-LOC=`grep "\/httpfs2-.*-.*-.*\.txz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SALIXREPO/$LOC
+LOC=`grep "\/httpfs2-.*-.*-.*\.txz$" Slackel.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SlackelREPO/$LOC
 echo "Installing httpfs2..."
 spkg -qq --root=/boot/initrd-tree/ -i httpfs2-*.txz
 rm httpfs2-*.txz
@@ -289,7 +289,7 @@ else
 fi
 
 # clean up
-rm -f slack.md5 salix.md5
+rm -f slack.md5 Slackel.md5
 rm -rf /boot/initrd-tree
 
 # chown everything back
