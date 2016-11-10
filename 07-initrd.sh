@@ -84,9 +84,10 @@ fi
 
 #REPO=http://slackware.org.uk
 REPO=http://slackware.uk
+
 SLACKREPO=$REPO/slackware/slackware${LIBDIRSUFFIX}-$VERSLACKWARE
 SLACK2REPO=$SLACKREPO/slackware${LIBDIRSUFFIX}
-SlackelREPO=$REPO/Slackel/$arch/$VER/
+SALIXREPO=$REPO/salix/$arch/$VER/
 
 mkdir -p initrd/$arch
 rm -rf initrd/$arch/*initrd*.img
@@ -116,27 +117,27 @@ rm /boot/initrd-tree/usr/lib/setup/*
 cp $SCRIPTSDIR/usr-lib-setup/* /boot/initrd-tree/usr/lib/setup/
 
 # download and install required packages
-rm -f slack.md5 Slackel.md5
+rm -f slack.md5 salix.md5
 echo "Downloading slack CHECKSUMS.md5 file"
 wget -q $SLACK2REPO/CHECKSUMS.md5 -O slack.md5
 echo "Downloading slackel CHECKSUMS.md5 file"
-wget -q $SlackelREPO/CHECKSUMS.md5 -O Slackel.md5
+wget -q $SALIXREPO/CHECKSUMS.md5 -O salix.md5
 
 echo "Downloading spkg..."
 rm -f spkg-*.txz
-LOC=`grep "\/spkg-.*-.*-.*\.tgz$" Slackel.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SlackelREPO/$LOC
+LOC=`grep "\/spkg-.*-.*-.*\.tgz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SALIXREPO/$LOC
 echo "Installing spkg..."
 spkg -qq --root=/boot/initrd-tree/ -i spkg-*.tgz
 rm spkg-*.tgz
 
 echo "Downloading xz..."
-rm -f xz-*.txz
-LOC=`grep "\/xz-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+rm -f xz-*.tgz
+LOC=`grep "\/xz-.*-.*-.*\.tgz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
 wget -q $SLACK2REPO/$LOC
 echo "Installing xz..."
-spkg -qq --root=/boot/initrd-tree/ -i xz-*.txz
-rm xz-*.txz
+spkg -qq --root=/boot/initrd-tree/ -i xz-*.tgz
+rm xz-*.tgz
 
 install_nfsutils() {
 echo "Downloading nfsutils..."
@@ -194,8 +195,8 @@ install_btrfs_progs
 install_httpfs2() {
 echo "Downloading httpfs2..."
 rm -f httpfs2-*.txz
-LOC=`grep "\/httpfs2-.*-.*-.*\.txz$" Slackel.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SlackelREPO/$LOC
+LOC=`grep "\/httpfs2-.*-.*-.*\.txz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SALIXREPO/$LOC
 echo "Installing httpfs2..."
 spkg -qq --root=/boot/initrd-tree/ -i httpfs2-*.txz
 rm httpfs2-*.txz
@@ -289,7 +290,7 @@ else
 fi
 
 # clean up
-rm -f slack.md5 Slackel.md5
+rm -f slack.md5 salix.md5
 rm -rf /boot/initrd-tree
 
 # chown everything back
