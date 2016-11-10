@@ -1,5 +1,5 @@
  
- Welcome to 09Slackel __EDITION__07 version 6.0.5!
+ Welcome to 09Slackel __EDITION__07 version 6.0.8!
 
  Some PCs may require extra kernel options to function properly.
  If you need to pass extra parameters, enter them at the prompt below
