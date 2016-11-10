@@ -84,7 +84,6 @@ fi
 
 #REPO=http://slackware.org.uk
 REPO=http://slackware.uk
-
 SLACKREPO=$REPO/slackware/slackware${LIBDIRSUFFIX}-$VERSLACKWARE
 SLACK2REPO=$SLACKREPO/slackware${LIBDIRSUFFIX}
 SALIXREPO=$REPO/salix/$arch/$VER/
@@ -132,12 +131,12 @@ spkg -qq --root=/boot/initrd-tree/ -i spkg-*.tgz
 rm spkg-*.tgz
 
 echo "Downloading xz..."
-rm -f xz-*.tgz
-LOC=`grep "\/xz-.*-.*-.*\.tgz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+rm -f xz-*.txz
+LOC=`grep "\/xz-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
 wget -q $SLACK2REPO/$LOC
 echo "Installing xz..."
-spkg -qq --root=/boot/initrd-tree/ -i xz-*.tgz
-rm xz-*.tgz
+spkg -qq --root=/boot/initrd-tree/ -i xz-*.txz
+rm xz-*.txz
 
 install_nfsutils() {
 echo "Downloading nfsutils..."
