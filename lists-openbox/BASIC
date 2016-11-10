@@ -409,3 +409,5 @@ pyxdg
 libcdio-paranoia
 libgphoto2
 libmtp
+lua
+tolua++

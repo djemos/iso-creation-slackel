@@ -1,14 +1,10 @@
 a2ps
-aaa_base
-aaa_terminfo
-acl
 acpid
 apr
 apr-util
 aspell
 aspell-en
 at
-attr
 autoconf
 autofs
 automake
@@ -23,7 +19,6 @@ ccache
 cdparanoia
 cdrdao
 cdrtools
-coreutils
 cpio
 cryptsetup
 curl
@@ -47,7 +42,6 @@ dvd+rw-tools
 e2fsprogs
 eject
 enscript
-etc
 ethtool
 eudev
 expat
@@ -70,7 +64,6 @@ gettext-tools
 getty-ps
 git
 glib2
-glibc-zoneinfo
 glibc
 glibc-i18n
 gmm

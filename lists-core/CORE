@@ -1,14 +1,10 @@
 a2ps
-aaa_base
-aaa_terminfo
-acl
 acpid
 apr
 apr-util
 aspell
 aspell-en
 at
-attr
 autoconf
 autofs
 automake
@@ -23,7 +19,6 @@ ccache
 cdparanoia
 cdrdao
 cdrtools
-coreutils
 cpio
 cryptsetup
 curl
@@ -47,7 +42,6 @@ dvd+rw-tools
 e2fsprogs
 eject
 enscript
-etc
 ethtool
 eudev
 expat
@@ -72,7 +66,6 @@ git
 glib2
 glibc
 glibc-i18n
-glibc-zoneinfo
 gmm
 gmp
 gnupg
@@ -91,6 +84,7 @@ gzip
 hdparm
 htop
 icmpinfo
+icu4c
 indent
 inetd
 infozip
@@ -133,6 +127,7 @@ libnl3
 libogg
 libpcap
 libpng
+libproxy
 libpthread-stubs
 libraw1394
 libsigsegv
@@ -210,6 +205,7 @@ python
 rcs
 readline
 reiserfsprogs
+rfkill
 rp-pppoe
 rpcbind
 rsync
