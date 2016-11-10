@@ -126,7 +126,7 @@ if [ -d $T_PX/var/log/setup ]; then
          # always run mouseconfig after installation,
          # also do not run the consolefont dialog, netconfig and the time
          # configuration dialog
-		 if [ "$SCRIPT" == "setup.mouse" ] || \
+	 if [ "$SCRIPT" == "setup.mouse" ] || \
             [ "$SCRIPT" == "setup.setconsolefont" ] || \
             [ "$SCRIPT" == "setup.netconfig" ] || \
             [ "$SCRIPT" == "setup.timeconfig" ] || \
