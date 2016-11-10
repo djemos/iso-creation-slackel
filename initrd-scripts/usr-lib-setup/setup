@@ -173,7 +173,7 @@ mkdir /var/log/mount 2> /dev/null
  if [ "$MAINSELECT" = "TARGET" ]; then
   SeTpartitions
   if [ $? -ne 0 ]; then
-	continue
+  	continue
   fi
   SeTEFI
   SeTDOS
